@@ -44,7 +44,7 @@ reg [7:0] douta_Bram;
    blk_mem_gen_0 spartan6 (
   .clka(clk),    // input wire clka
   .ena(1'b1),      // input wire ena
-  .addra(addra),  // input wire [18 : 0] addra
-  .douta(douta)  // output wire [7 : 0] douta
+  .addra(addra_Bram),  // input wire [18 : 0] addra
+  .douta(douta_Bram)  // output wire [7 : 0] douta
 );
 endmodule
